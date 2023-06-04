@@ -1,0 +1,57 @@
+.task-edit {
+  padding: 30px;
+  padding-top: 10px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 40%;
+  max-height: 100%;
+  overflow-y: auto;
+  margin-top: 35px;
+}
+
+.task-edit__remove-button-container {
+  text-align: end;
+  margin-top: 10px;
+}
+
+.task-edit__remove-button {
+  padding: 0;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.task-edit__details-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 10px;
+  column-gap: 40px;
+}
+
+.task-edit__label {
+  font-weight: bold;
+}
+
+.task-edit__input {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: inherit;
+  padding: 5px 10px;
+  outline: none;
+  width: 90%;
+}
+
+textarea.task-edit__input {
+  resize: none;
+  height: 200px;
+}
+
+@media (max-width: 1000px) {
+
+  .task-edit__details-grid,
+  .task-edit__ingredient-grid {
+    grid-template-columns: 1fr;
+  }
+}
